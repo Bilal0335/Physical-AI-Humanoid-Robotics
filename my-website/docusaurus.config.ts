@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics-Book/tree/main/my-website',
+            'https://github.com/your-github-username/Physical-AI-Humanoid-Robotics-Book/tree/main/my-website',
         },
         blog: {
           showReadingTime: true,
@@ -55,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics-Book/tree/main/my-website',
+            'https://github.com/your-github-username/Physical-AI-Humanoid-Robotics-Book/tree/main/my-website',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -90,7 +90,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics-Book',
+          href: 'https://github.com/your-github-username/Physical-AI-Humanoid-Robotics-Book',
           label: 'GitHub',
           position: 'right',
         },
@@ -134,7 +134,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics-Book',
+              href: 'https://github.com/your-github-username/Physical-AI-Humanoid-Robotics-Book',
             },
           ],
         },
