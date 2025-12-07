@@ -1,30 +1,10 @@
-<!--
-Sync Impact Report:
-Version change: none -> 1.0.0
-Modified principles: None (initial setup)
-Added sections:
-- Book Requirements
-- RAG Chatbot Requirements
-Removed sections: None
-Templates requiring updates:
-- .specify/templates/plan-template.md: ✅ updated
-- .specify/templates/spec-template.md: ✅ updated
-- .specify/templates/tasks-template.md: ✅ updated
-- .gemini/commands/sp.adr.toml: ✅ updated
-- .gemini/commands/sp.analyze.toml: ✅ updated
-- .gemini/commands/sp.checklist.toml: ✅ updated
-- .gemini/commands/sp.clarify.toml: ✅ updated
-- .gemini/commands/sp.constitution.toml: ✅ updated
-- .gemini/commands/sp.git.commit_pr.toml: ✅ updated
-- .gemini/commands/sp.implement.toml: ✅ updated
-- .gemini/commands/sp.phr.toml: ✅ updated
-- .gemini/commands/sp.plan.toml: ✅ updated
-- .gemini/commands/sp.specify.toml: ✅ updated
-- .gemini/commands/sp.tasks.toml: ✅ updated
-- README.md: ✅ updated
-Follow-up TODOs: RATIFICATION_DATE
--->
-# Physical AI & Humanoid Robotics Book + Integrated RAG Chatbot Constitution
+---
+sidebar_position: 1
+---
+
+# Project Principles
+
+This document outlines the core principles guiding the development of the "Physical AI & Humanoid Robotics Book + Integrated RAG Chatbot" project. These principles ensure consistency, quality, and adherence to our vision.
 
 ## Core Principles
 
