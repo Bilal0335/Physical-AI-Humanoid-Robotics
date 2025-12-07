@@ -1,23 +1,106 @@
 /**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
+ * Modern premium hero section styling
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+
+  /* Modern gradient background */
+  background: linear-gradient(
+    135deg,
+    #5b67f1 0%,
+    #8b59ff 50%,
+    #b057ff 100%
+  );
+
+  /* Soft glass highlight */
+  box-shadow: inset 0 0 120px rgba(255, 255, 255, 0.15);
+
+  border-radius: 0 0 40px 40px;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+/* Floating gradient circles */
+.heroBanner::before,
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  filter: blur(90px);
+  animation: float 6s ease-in-out infinite alternate;
+}
+
+.heroBanner::before {
+  top: -40px;
+  left: -60px;
+}
+
+.heroBanner::after {
+  bottom: -60px;
+  right: -80px;
+}
+
+/* Floating animation */
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
   }
 }
 
+/* Responsive adjustments */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+/* Buttons container */
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+/* Style individual buttons */
+.buttons a {
+  padding: 0.8rem 1.6rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #ffffff;
+  color: #4e54d4;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: 0.25s ease;
+}
+
+.buttons a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* Dark mode compatibility */
+[data-theme='dark'] .heroBanner {
+  background: linear-gradient(
+    135deg,
+    #4146d7,
+    #6d45d8,
+    #9143da
+  );
+  box-shadow: inset 0 0 140px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme='dark'] .heroBanner::before,
+[data-theme='dark'] .heroBanner::after {
+  background: rgba(255, 255, 255, 0.08);
 }
