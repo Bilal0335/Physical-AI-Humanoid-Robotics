@@ -1,5 +1,5 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://physical-ai-humanoid-robotics-book.vercel.app',
+  url: 'https://your-github-username.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/Physical-AI-Humanoid-Robotics-Book/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Bilal0335', // Usually your GitHub org/user name.
-  projectName: 'Physical-AI-Humanoid-Robotics', // Usually your repo name.
+  organizationName: 'your-github-username', // Usually your GitHub org/user name.
+  projectName: 'Physical-AI-Humanoid-Robotics-Book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics/tree/main/my-website'
+            'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics-Book/tree/main/my-website',
         },
         blog: {
           showReadingTime: true,
@@ -55,8 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics/tree/main/my-website',
-
+            'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics-Book/tree/main/my-website',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -89,9 +88,9 @@ const config: Config = {
           label: 'Book',
           to: '/docs/intro',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics',
+          href: 'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics-Book',
           label: 'GitHub',
           position: 'right',
         },
@@ -135,7 +134,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics',
+              href: 'https://github.com/Bilal0335/Physical-AI-Humanoid-Robotics-Book',
             },
           ],
         },
