@@ -1,30 +1,109 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * GLOBAL PROFESSIONAL UI THEME
+ * Clean, modern, premium styling for Docusaurus
  */
 
-/* You can override the default Infima variables here. */
+/* -------------------------
+   LIGHT MODE THEME
+-------------------------- */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* BRAND COLORS */
+  --ifm-color-primary: #5b67f1;
+  --ifm-color-primary-dark: #4f5bd9;
+  --ifm-color-primary-darker: #4854c7;
+  --ifm-color-primary-darkest: #3a45a4;
+  --ifm-color-primary-light: #6a75ff;
+  --ifm-color-primary-lighter: #7c86ff;
+  --ifm-color-primary-lightest: #9ca4ff;
+
+  /* GRADIENTS */
+  --gradient-primary: linear-gradient(135deg, #5b67f1, #9f57ff);
+
+  /* RADIUS & SPACING */
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+  /* FONTS */
+  --ifm-font-family-base: "Inter", sans-serif;
+
+  --ifm-code-font-size: 92%;
+
+  /* CODE HIGHLIGHT */
+  --docusaurus-highlighted-code-line-bg: rgba(90, 100, 230, 0.08);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* -------------------------
+   DARK MODE THEME
+-------------------------- */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* BRAND COLORS (NEON GLOW STYLE) */
+  --ifm-color-primary: #8f9bff;
+  --ifm-color-primary-dark: #818cff;
+  --ifm-color-primary-darker: #737dff;
+  --ifm-color-primary-darkest: #5b64d4;
+  --ifm-color-primary-light: #9fa9ff;
+  --ifm-color-primary-lighter: #b2baff;
+  --ifm-color-primary-lightest: #c8ceff;
+
+  --gradient-primary: linear-gradient(135deg, #8f9bff, #b164ff);
+
+  /* DARK GLASS SHADOW */
+  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.45);
+
+  /* CODE HIGHLIGHT */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+}
+
+/* -------------------------
+   GLOBAL UI IMPROVEMENTS
+-------------------------- */
+
+/* Buttons */
+.button {
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-soft);
+  transition: 0.25s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Navbar */
+.navbar {
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme='dark'] .navbar {
+  background: rgba(10, 12, 27, 0.65);
+  backdrop-filter: blur(16px);
+}
+
+/* Cards */
+.card {
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+}
+
+/* Hero Section Enhanced */
+.hero--primary {
+  background: var(--gradient-primary);
+  border-radius: 0 0 40px 40px;
+  box-shadow: inset 0 -20px 40px rgba(0, 0, 0, 0.04);
+}
+
+/* Code blocks */
+.codeBlock {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
 }
